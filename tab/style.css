@@ -1,0 +1,26 @@
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #0c0c0f;
+    background: #e3adad;
+    padding: 5px;
+    margin: 10px;
+}
+
+.tab.tab-left {
+    width: 50%;
+    float: left;
+}
+
+.tab.tab-right {
+    width: 50%;
+    float: left;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active{
+    display: block;
+}
