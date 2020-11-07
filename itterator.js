@@ -1,9 +1,24 @@
-const person = ["emran", "shain", "noman", "shumon"];
-const name = "al Emran Shain";
+const range = {
+  from: 1,
+  to: 5,
+};
 
+range[Symbol.iterator] = function () {
+  return {
+    current: this.from,
+    last: this.to,
 
-//for of
-
-for (let elements of name){
-    console.log(elements);
-}
+    next() {
+      if (this.current <= this.last) {
+        return {
+          done: false,
+          value: this.current++,
+        };
+      } else {
+        return {
+          done: true,
+        };
+      }
+    },
+  };
+};
