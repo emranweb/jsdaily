@@ -22,3 +22,15 @@ range[Symbol.iterator] = function () {
     },
   };
 };
+
+
+const person= ['A',"B","C","D"]
+
+const item  = person[Symbol.iterator]();
+
+while(true){
+  let a = item.next();
+  if(a.done){
+    break;
+  }
+}
