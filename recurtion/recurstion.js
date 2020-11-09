@@ -18,7 +18,7 @@ function power2(base,componet){
     if(componet ==1){
         return base;
     }else{
-        return x * (base, componet-1);
+        return base * (base, componet-1);
     }
 
 }
